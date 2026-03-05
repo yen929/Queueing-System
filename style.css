@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f1f5f9;
+}
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #4a90e2);
+}
+.login-container {
+    width: 380px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+.login-container label {
+    font-weight: 600;
+    color: #555;
+}
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+    transition: 0.2s;
+}
+.login-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.login-btn:hover {
+    background: #005fcc;
+}
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.top-bar {
+    background: #1e293b;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logout-btn {
+    color: #ff6666;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.logout-btn:hover {
+    text-decoration: underline;
+}
+.enroll-container {
+    width: 500px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+.enroll-container h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+.enroll-container input[type="text"],
+.enroll-container input[type="radio"] {
+    margin-bottom: 15px;
+}
+.cert {
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #555;
+}
+.enroll-container button {
+    width: 100%;
+    padding: 14px;
+    background: #16a34a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.enroll-container button:hover {
+    background: #15803d;
+}
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+.left {
+    width: 40%;
+    background: #f8fafc;
+    padding: 25px;
+    overflow-y: auto;
+    border-right: 1px solid #e2e8f0;
+}
+.queue-box {
+    margin-bottom: 40px;
+}
+.queue-box h2 {
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.queue-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.queue-item span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+.view-btn {
+    text-align: center;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+}
+.view-btn .eye {
+    font-size: 22px;
+}
+.right {
+    flex: 1;
+    background: #0f172a;
+    padding: 35px;
+    color: white;
+}
+.form-box {
+    background: white;
+    color: black;
+    padding: 35px;
+    border-radius: 12px;
+}
+.print-btn,
+.proceed-btn {
+    padding: 12px 18px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.print-btn {
+    background: #15803d;
+    color: white;
+}
+.proceed-btn {
+    background: #2563eb;
+    color: white;
+}
+.monitor-wrapper {
+    text-align: center;
+    padding: 40px;
+    background: #0f172a;
+    height: 100vh;
+    color: white;
+}
+.monitor-title {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.queue-display {
+    font-size: 70px;
+    background: #1e293b;
+    padding: 25px 40px;
+    border-radius: 14px;
+    margin: 20px auto;
+    width: 450px;
+    font-weight: 700;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+{"id":"50125","title":"Login CSS","variant":"standard"}
+.login-body {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background: #005fcc;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
